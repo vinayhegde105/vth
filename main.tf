@@ -24,7 +24,7 @@ resource "aws_instance" "EC2Instance" {
     ami = var.ami
     instance_type = var.instance_type
     key_name = "vth"
-    availability_zone = "us-east-1d"
+#     availability_zone = "us-east-1d"
     tenancy = "default"
     subnet_id = "subnet-0610a377e65a0067a"
     ebs_optimized = false

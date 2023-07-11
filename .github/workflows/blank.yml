@@ -13,4 +13,12 @@ jobs:
         run: | 
           echo "party"
           choco install netfx-4.6.2-devpack
-          gsudo choco install visualstudio2013teamexplorer
+          
+      - name: Run as administrator
+        run: choco install visualstudio2013teamexplorer
+        
+        
+        
+        
+        
+      

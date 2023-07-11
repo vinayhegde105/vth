@@ -15,7 +15,7 @@ jobs:
           choco install netfx-4.6.2-devpack
           
       - name: Run as administrator
-        run: choco install visualstudio2013teamexplorer
+        run: Start-Process powershell -Verb RunAs -ArgumentList '-Command "choco install visualstudio2013teamexplorer"'
         
         
         

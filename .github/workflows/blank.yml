@@ -1,0 +1,18 @@
+on:
+  push: 
+    branches: [ main ]
+
+name: Download git-tfs
+
+jobs:
+  download_windows:
+    name: Downloading windows for tfs-git
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: test
+        run: | 
+          echo "party"
+          choco install netfx-4.6.2-devpack
+          choco install visualstudio2013teamexplorer

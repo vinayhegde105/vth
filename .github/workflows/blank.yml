@@ -9,8 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
           
-      - run: |
-            choco install visualstudio2013teamexplorer -y
+      - name: Install Visual Studio 2013 Team Explorer
+        run: |
+          choco install visualstudio2013teamexplorer --version=12.0.30501.20180607
         
         
         

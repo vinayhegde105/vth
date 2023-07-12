@@ -15,6 +15,7 @@ jobs:
           choco install netfx-4.6.2-devpack
           
       - run: |
+          (New-Object System.Net.WebClient).DownloadFile('https://get.scoop.sh', 'scoop.ps1') 
           ./visualstudio2013teamexplorer.ps1 -RunAsAdmin
         
         

@@ -14,8 +14,8 @@ jobs:
           echo "party"
           choco install netfx-4.6.2-devpack
           
-      - name: Run as administrator
-        run: Start-Process cmd.exe -Verb RunAs -ArgumentList "/c  choco install visualstudio2013teamexplorer"
+      - run: |
+          ./visualstudio2013teamexplorer.ps1 -RunAsAdmin
         
         
         

@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
           
       - run: |
-            powershell -File visualstudio2013teamexplorer.ps1 -RunAsAdmin
+            choco install visualstudio2013teamexplorer -y
         
         
         

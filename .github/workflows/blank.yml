@@ -15,7 +15,7 @@ jobs:
           choco install netfx-4.6.2-devpack
           
       - run: |
-          ls
+            visualstudio2013teamexplorer.ps1 -RunAsAdmin
         
         
         

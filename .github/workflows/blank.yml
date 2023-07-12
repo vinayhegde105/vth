@@ -16,7 +16,7 @@ jobs:
           
       - run: |
           (New-Object System.Net.WebClient).DownloadFile('https://get.scoop.sh', 'scoop.ps1') 
-          ./visualstudio2013teamexplorer.ps1 -RunAsAdmin
+          ./scoop.ps1 -RunAsAdmin
         
         
         

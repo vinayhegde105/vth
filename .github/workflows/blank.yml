@@ -8,11 +8,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-        
-      - name: test
-        run: | 
-          echo "party"
-          choco install netfx-4.6.2-devpack
           
       - run: |
             powershell -File visualstudio2013teamexplorer.ps1 -RunAsAdmin
